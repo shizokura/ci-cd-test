@@ -49,7 +49,7 @@ describe('Mount Quasar', () => {
   it('correctly updates data when button is pressed', () => {
     const button = wrapper.find('button')
     button.trigger('click')
-    expect(vm.counter).toBe(1)
+    expect(vm.counter).toBe(2)
   })
 
   it('formats a date without throwing exception', () => {
