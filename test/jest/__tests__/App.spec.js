@@ -56,6 +56,6 @@ describe('Mount Quasar', () => {
     // test will automatically fail if an exception is thrown
     // MMMM and MMM require that a language is 'installed' in Quasar
     let formattedString = date.formatDate(Date.now(), 'YYYY MMMM MMM DD')
-    console.log('formattedString', formattedString)
+    console.log('formattedStringTest', formattedString)
   })
 })
