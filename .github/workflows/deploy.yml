@@ -14,11 +14,8 @@ jobs:
           node-version: 12
       - run: yarn install --frozen-lockfile
       - run: yarn run build
-      - run: cd functions
-      - run: npm install
-      - run: cd ..
       - uses: w9jds/firebase-action@master
         with:
-          args: deploy
+          args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
