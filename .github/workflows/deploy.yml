@@ -15,7 +15,7 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn run build
       - run: cd functions
-      - run: npm ci
+      - run: npm install
       - uses: w9jds/firebase-action@master
         with:
           args: deploy
