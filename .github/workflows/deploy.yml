@@ -20,3 +20,4 @@ jobs:
           args: deploy
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          PROJECT_ID: practice-firebase-62908
