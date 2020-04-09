@@ -16,6 +16,7 @@ jobs:
       - run: yarn run build
       - run: cd functions
       - run: npm install
+      - run: cd ..
       - uses: w9jds/firebase-action@master
         with:
           args: deploy
